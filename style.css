@@ -48,7 +48,8 @@
 .section__button {
   outline: none;
 }
-.section__button {
+.section__button,
+.section__button_delete {
   background: none;
   border: 0px;
   color: #888;
@@ -71,7 +72,8 @@
   margin: 0;
   text-transform: uppercase;
 }
-.section__input[type="text"] {
+.section__input[type="text"],
+#section__new_task[type="text"] {
   margin: 0;
   font-size: 18px;
   line-height: 18px;
@@ -122,12 +124,12 @@
 .section__task__list__item > .section__input[type="text"] {
   width: 226px;
 }
-.section__button.section__button_delete .section__button_delete__icon {
+.section__button_delete .section__button_delete__icon {
   height: 2em;
   transform: rotateZ(45deg);
   transition: transform 200ms ease-in;
 }
-.section__button.section__button_delete .section__button_delete__icon:hover {
+.section__button_delete .section__button_delete__icon:hover {
   transform: rotateZ(0);
 }
 
